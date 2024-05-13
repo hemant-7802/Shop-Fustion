@@ -5,20 +5,20 @@ import { Paper, Button } from '@mui/material'
 function Heropage() {
     const items = [
         {
-            img:"https://i.postimg.cc/QCG6LDVp/jon-cellier-RUs-VVa57-VPI-unsplash.jpg"
+            img: "https://i.postimg.cc/QCG6LDVp/jon-cellier-RUs-VVa57-VPI-unsplash.jpg"
         },
         {
-            img:"https://i.postimg.cc/k5hJv1Dr/marie-michele-bouchard-SN6-HW62ub-LA-unsplash.jpg"
+            img: "https://i.postimg.cc/k5hJv1Dr/marie-michele-bouchard-SN6-HW62ub-LA-unsplash.jpg"
         }
     ]
 
     return (
-        <Carousel className=''>
+        <Carousel className='' animation='slide' height={120} duration={500}>
             {
                 items.map((item, i) =>
                     // <Item key={i} item={item} />
-                    <Paper className=''>
-                        <img src={item.img} className='' />
+                    <Paper className='' key={item.img}>
+                        <img src={item.img} className='w-full' />
                     </Paper>
                 )
             }

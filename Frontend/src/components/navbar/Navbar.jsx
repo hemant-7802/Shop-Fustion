@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar";
 import Input from "../input/Input";
+// import { MdSearch } from "react-icons/md";
 // import SearchBar from "../searchBar/SearchBar";
 // import { useSelector } from "react-redux";
 

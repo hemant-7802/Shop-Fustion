@@ -42,23 +42,17 @@ const Category = () => {
     return (
         <div>
             <div className="flex flex-col py-20">
-                {/* main 1 */}
                 <div className="flex overflow-x-scroll lg:justify-center  hide-scroll-bar">
-                    {/* main 2  */}
                     <div className="flex ">
-                        {/* category  */}
                         {category.map((item, index) => {
                             return (
                                 <div key={index} className="px-3 lg:px-10">
-                                    {/* Image  */}
                                     <div onClick={() => navigate(`/category/${item.name}`)} className=" w-16 h-16 lg:w-24 lg:h-24 max-w-xs rounded-full overflow-hidden bg-sky-100 transition-all hover:bg-sky-300 cursor-pointer mb-1 " >
                                         <div className="flex justify-center items-center">
-                                            {/* Image tag  */}
                                             <img src={item.image} alt="img" width={90} />
                                         </div>
                                     </div>
 
-                                    {/* Name Text  */}
                                     <h1 className=' text-sm lg:text-lg text-center font-medium title-font first-letter:uppercase font-mono'>{item.name}</h1>
                                 </div>
                             )
@@ -67,7 +61,6 @@ const Category = () => {
                 </div>
             </div>
 
-            {/* style  */}
             <style dangerouslySetInnerHTML={{ __html: "\n.hide-scroll-bar {\n  -ms-overflow-style: none;\n  scrollbar-width: none;\n}\n.hide-scroll-bar::-webkit-scrollbar {\n  display: none;\n}\n" }} />
         </div>
     );
