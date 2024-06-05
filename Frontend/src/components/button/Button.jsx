@@ -6,7 +6,7 @@ const Button = ({
     btnName = '',
     disabled = '',
 }) => {
-    return <button type={type} className={`${className} border-none`} disabled={disabled} >{btnName}</button>
+    return <button type={type} className={`${className} border-none text-black font-semibold`} disabled={disabled} >{btnName}</button>
 }
 
 export default Button

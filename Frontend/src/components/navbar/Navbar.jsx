@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar";
 import Input from "../input/Input";
+import Button from "../button/Button";
 // import { MdSearch } from "react-icons/md";
 // import SearchBar from "../searchBar/SearchBar";
 // import { useSelector } from "react-redux";
@@ -74,8 +75,8 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-xl">Shop Fusion</a>
             </div>
             {/* search bar */}
-            <div className="form-control w-1/2 sm:w-1/2">
-                <Input type="text" placeholder="Search..." labelValue="false" className="input input-bordered w-full md:w-auto" />
+            <div className="form-control w-1/2 ">
+                <SearchBar />
             </div>
             <div className="">
                 <div className="dropdown dropdown-end">
@@ -92,7 +93,7 @@ const Navbar = () => {
                             <span className="font-bold text-lg">8 Items</span>
                             <span className="text-info">Subtotal: $999</span>
                             <div className="card-actions">
-                                <button className="btn btn-primary btn-block">View cart</button>
+                                <Button btnName="view cart" className="capitalize py-3 rounded-xl bg-purple-500 hover:bg-purple-600 w-full" />
                             </div>
                         </div>
                     </div>
